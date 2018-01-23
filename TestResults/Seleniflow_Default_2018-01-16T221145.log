@@ -1,0 +1,95 @@
+﻿2018-01-16T22:11:45.8630504+00:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2018-01-16T22:11:45.9722148+00:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2018-01-16T22:11:45.9722148+00:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\alexs\source\repos\Seleniflow\Seleniflow\bin\Debug\Seleniflow.dll
+2018-01-16T22:11:45.9722148+00:00;VSTestExecutionThread;Info;Profile: Default
+2018-01-16T22:11:58.0845705+00:00;Thread#12;Info;Discovering target: Default
+2018-01-16T22:11:58.0845705+00:00;Thread#12;Info;Discovering tests from assembly: C:\Users\alexs\source\repos\Seleniflow\Seleniflow\bin\Debug\Seleniflow.dll
+Appdomain Disposed
+Test Suite Dump
+#0: Seleniflow/Default - 
+#1: Default - 
+#2: Seleniflow - 
+#3: SpecFlowFeature1 - 
+#4: Search for SpecFlow on Google - TestAssembly:Seleniflow/Feature:SpecFlowFeature1/Scenario:Search+for+SpecFlow+on+Google
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #4 from normal test queue 
+Thread#0:Scheduler: considering testitem #4 for thread 0
+Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #4 for thread 0
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for Seleniflow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\alexs\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.6.3\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #4/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given I navigate to the page "https://www.google.com"
+Thread#0:T:error: Exception has been thrown by the target of an invocation.
+Thread#0:B:And I see the page is loaded
+Thread#0:T:skipped because of previous errors
+Thread#0:B:When I enter Search Keyword in the Search Text box
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And I click on Search Button
+Thread#0:T:skipped because of previous errors
+Thread#0:B:Then Search items shows the items related to SpecFlow
+Thread#0:T:skipped because of previous errors
+Thread#0:TestItem#4:Scheduler: reschedule tests for testitem #4
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: dequeuing a rescheduled testitem: #4
+Thread#0:Scheduler: considering testitem #4 for thread 0
+Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #4 for thread 0
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 1
+Thread#0: Test #4/0 is finished on thread #0 as Failed within 1.5829768 seconds
+Thread#0: Test #4/1 is started on thread #0
+Thread#0:B:Given I navigate to the page "https://www.google.com"
+Thread#0:T:error: Exception has been thrown by the target of an invocation.
+Thread#0:B:And I see the page is loaded
+Thread#0:T:skipped because of previous errors
+Thread#0:B:When I enter Search Keyword in the Search Text box
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And I click on Search Button
+Thread#0:T:skipped because of previous errors
+Thread#0:B:Then Search items shows the items related to SpecFlow
+Thread#0:T:skipped because of previous errors
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: dequeuing a rescheduled testitem: #4
+Thread#0:Scheduler: considering testitem #4 for thread 0
+Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #4 for thread 0
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 2
+Thread#0: Test #4/1 is finished on thread #0 as Failed within 1.0224355 seconds
+Thread#0: Test #4/2 is started on thread #0
+Thread#0:B:Given I navigate to the page "https://www.google.com"
+Thread#0:T:error: Exception has been thrown by the target of an invocation.
+Thread#0:B:And I see the page is loaded
+Thread#0:T:skipped because of previous errors
+Thread#0:B:When I enter Search Keyword in the Search Text box
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And I click on Search Button
+Thread#0:T:skipped because of previous errors
+Thread#0:B:Then Search items shows the items related to SpecFlow
+Thread#0:T:skipped because of previous errors
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #4/2 is finished on thread #0 as Failed within 1.023045 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 1 (test executions: 3)
+Succeeded: 0
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1
