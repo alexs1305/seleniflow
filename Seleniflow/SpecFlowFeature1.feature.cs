@@ -13,78 +13,75 @@
 namespace Seleniflow
 {
     using TechTalk.SpecFlow;
-
-
+    
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.2.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("SpecFlowFeature1", SourceFile = "SpecFlowFeature1.feature", SourceLine = 0)]
+    [NUnit.Framework.TestFixtureAttribute()]
+    [NUnit.Framework.DescriptionAttribute("SpecFlowFeature1")]
     public partial class SpecFlowFeature1Feature
     {
-
+        
         private TechTalk.SpecFlow.ITestRunner testRunner;
-
+        
 #line 1 "SpecFlowFeature1.feature"
 #line hidden
-
-        [TechTalk.SpecRun.FeatureInitialize()]
+        
+        [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "SpecFlowFeature1", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
-
-        [TechTalk.SpecRun.FeatureCleanup()]
+        
+        [NUnit.Framework.OneTimeTearDownAttribute()]
         public virtual void FeatureTearDown()
         {
             testRunner.OnFeatureEnd();
             testRunner = null;
         }
-
+        
+        [NUnit.Framework.SetUpAttribute()]
         public virtual void TestInitialize()
         {
         }
-
-        [TechTalk.SpecRun.ScenarioCleanup()]
+        
+        [NUnit.Framework.TearDownAttribute()]
         public virtual void ScenarioTearDown()
         {
             testRunner.OnScenarioEnd();
         }
-
+        
         public virtual void ScenarioSetup(TechTalk.SpecFlow.ScenarioInfo scenarioInfo)
         {
             testRunner.OnScenarioStart(scenarioInfo);
         }
-
+        
         public virtual void ScenarioCleanup()
         {
             testRunner.CollectScenarioErrors();
         }
-
-        [TechTalk.SpecRun.ScenarioAttribute("Search for SpecFlow on Google", SourceLine = 2)]
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Search for SpecFlow on Google")]
         public virtual void SearchForSpecFlowOnGoogle()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search for SpecFlow on Google", ((string[])(null)));
 #line 3
-            this.ScenarioSetup(scenarioInfo);
+this.ScenarioSetup(scenarioInfo);
 #line 4
-            testRunner.Given("I navigate to the page \"https://www.google.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I navigate to the page \"https://www.google.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 5
-            testRunner.And("I see the page is loaded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I see the page is loaded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 6
-            testRunner.When("I enter Search Keyword in the Search Text box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I enter Search Keyword in the Search Text box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 7
-            testRunner.And("I click on Search Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I click on Search Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 8
-            testRunner.Then("Search items shows the items related to SpecFlow", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("Search items shows the items related to SpecFlow", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
-        }
-
-        [TechTalk.SpecRun.TestRunCleanup()]
-        public virtual void TestRunCleanup()
-        {
-            TechTalk.SpecFlow.TestRunnerManager.GetTestRunner().OnTestRunEnd();
         }
     }
 }
