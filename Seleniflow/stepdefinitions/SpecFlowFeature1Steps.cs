@@ -1,4 +1,6 @@
-﻿using OpenQA.Selenium;
+﻿using System.IO;
+using System.Reflection;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using TechTalk.SpecFlow;
 using Seleniflow.Google;
@@ -14,7 +16,9 @@ namespace Seleniflow.stepdefinitions
 
         public SpecFlowFeature1Steps()
         {
-            driver = new ChromeDriver(@"C:\Users\alexs\source\repos\Seleniflow\Seleniflow\drivers");
+            var executingLocation = Assembly.GetExecutingAssembly().Location;
+            var assemblyDirectory = Path.GetDirectoryName(executingLocation);
+            driver = new ChromeDriver(Path.Combine(assemblyDirectory,@"drivers"));
             searchPage = new SearchPage(driver);
         }
 
