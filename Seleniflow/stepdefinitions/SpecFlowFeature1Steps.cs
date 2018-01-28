@@ -2,7 +2,7 @@
 using OpenQA.Selenium.Chrome;
 using TechTalk.SpecFlow;
 using Seleniflow.Google;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace Seleniflow.stepdefinitions
 {
